@@ -1,0 +1,22 @@
+body{
+    background: var(--background-color);
+}
+
+.container{
+    height: 100vh;
+}
+
+.forms{
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--primary-color);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn{
+    background: var(--secondary-color);
+}
+
+.btn:hover{
+    background: var(--secondary-shadow);
+}

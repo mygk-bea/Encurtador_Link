@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('site.index');
 Route::get('/redirect', [App\Http\Controllers\IndexController::class, 'redirect'])->name('site.redirect');
+Route::get('/contact', [App\Http\Controllers\IndexController::class, 'contact'])->name('site.contact');
 
 Route::get('/register', [App\Http\Controllers\AccountController::class, 'register'])->name('site.register');
 Route::get('/recover', [App\Http\Controllers\AccountController::class, 'recover'])->name('site.recover');

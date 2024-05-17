@@ -11,7 +11,11 @@ class AccountController extends Controller
     }
 
     public function recover() {
-        return View('site.recover');
+        $menu = [
+            ['page'=>'contact','traducao'=>'Fale Conosco'],
+            ['page'=>'login','traducao'=>'Entrar'],
+        ];
+        return View('site.recover', compact('menu'));
     }
     
     public function login() {

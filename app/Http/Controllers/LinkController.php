@@ -15,6 +15,14 @@ class LinkController extends Controller
     }
 
     public function list() {
-        return View('site.list'); 
+        $menu = [
+            ['page'=>'register','traducao'=>'Cadastro'],
+            ['page'=>'contact','traducao'=>'Fale Conosco'],
+            ['page'=>'index','traducao'=>'Home'],
+            ['page'=>'recover','traducao'=>'Recuperar'],
+            ['page'=>'login','traducao'=>'Entrar'],
+        ];
+
+        return View('site.list', compact('menu')); 
     }
 }

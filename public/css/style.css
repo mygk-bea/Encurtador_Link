@@ -2,7 +2,7 @@
 
 :root{
     --background-color  : #25202E;
-    --partial-bg-color  : #37253f;
+    --partial-bg-color  : #38283f;
 
     --title-color       : #e9ddff;
     --text-color        : #E8F0F3;
@@ -28,19 +28,40 @@ body{
     background: var(--background-color);
     color: var(--text-color);
     font-family: "Bree Serif", serif;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/* Tags */
+a{
+    text-decoration: none;
+}
+
+
+/*  */
 .title{
     margin-bottom: 40px;
     font-size: 3rem;
-    color: var(--title-color);
+    color: var(--hover-color);
 }
 
-/* .logo{
-    margin: 20px 0;
-} */
+.container{
+    height: 88vh;
+}
 
+/* SITE */
+.site__logo{
+    height: 50px;
+}
 
+.title__logo{
+    margin: 0 5px;
+    font-size: 2rem;
+    color: var(--title-color);
+}
 
 /* HEADER */
 .header{
@@ -54,7 +75,6 @@ body{
 
 .header__nav li a{
     font-size: 1.2rem;
-    text-decoration: none;
     color: var(--title-color);
 }
 

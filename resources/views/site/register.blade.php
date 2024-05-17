@@ -10,24 +10,30 @@
     <link rel="stylesheet" href="{{ asset('css/forms.css') }}">
 </head>
 <body>
-    <div class="container col-3 d-flex flex-column justify-content-center">
-        <div class="forms col-12 d-flex flex-column align-items-end">
-            <div class="mb-3 col-12 email">
+    <div class="container col-12 d-flex align-items-center">
+        <div class="forms col-6 rounded">
+            <h1 class="title">Encurta Link</h1>
+            <div class="mb-3 col-10 field email">
                 <label for="basic-url" class="form-label">E-mail</label>
                 <input type="text" class="form-control" placeholder="endereco@dominio.com">
             </div>
-            <div class="mb-3 col-12 password">
+            <div class="mb-3 col-10 field password">
                 <label for="basic-url" class="form-label">Senha</label>
                 <input type="text" class="form-control" placeholder="Insira uma senha">
             </div>
-            <div class="mb-3 col-12 password__confirm">
+            <div class="mb-3 col-10 field password__confirm">
                 <label for="basic-url" class="form-label">Confirmar Senha</label>
                 <input type="text" class="form-control" placeholder="Confirme a senha">
             </div>
-    
-            <div class="button">
-                <button type="button" class="btn">Registrar</button>
+
+            <div class="col-10 d-flex justify-content-end">
+                <button type="button" class="forms__btn rounded" data-bs-theme="dark">
+                    <a href="{{ route('site.index') }}">Registrar</a>
+                </button>
             </div>
+        </div>
+        <div class="forms__logo col-6 align-content-center">
+            <img src="{{ asset('images/Logo.png') }}" class="col-12 logo" alt="logo">
         </div>
     </div>
 

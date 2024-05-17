@@ -10,15 +10,21 @@
     <link rel="stylesheet" href="{{ asset('css/forms.css') }}">
 </head>
 <body>
-    <div class="container col-3 d-flex flex-column justify-content-center align-items-end">
-        <div class="forms col-12">
-            <div class="mb-3 col-12 email">
-                <label for="basic-url" class="form-label">E-mail</label>
+    <div class="container col-8 d-flex flex-column justify-content-center">
+        <div class="logo d-flex align-items-center justify-content-center">
+            <img src="{{ asset('images/Logo.png') }}" class="site__logo" alt="logo">
+            <h1 class="title__logo">Encurta Link</h1>
+        </div>
+        <div class="forms col-12 d-flex flex-column align-items-end">
+            <div class="mb-3 col-12 input-group-lg email">
+                <h3 for="basic-url" class="form-label">Insira seu e-mail</h3>
                 <input type="text" class="form-control" placeholder="endereco@dominio.com">
             </div>
     
-            <div class="button">
-                <button type="button" class="btn">Recuperar</button>
+            <div class="col-12 d-flex justify-content-end">
+                <button type="button" class="forms__btn rounded" data-bs-theme="dark">
+                    <a href="{{ route('site.login') }}">Recuperar</a>
+                </button>
             </div>
         </div>
     </div>

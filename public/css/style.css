@@ -1,14 +1,50 @@
-:root{
-    --background-color: #FFF4E6;
-    --primary-color: #e4f0ed;
-    --secondary-color: #ff5e58;
-    --tertiary-color: #4F5C5C;
-    --quaternary-color: #A0B3B2;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
-    --secondary-shadow: #c55a57;
+:root{
+    --background-color  : #25202E;
+
+    --title-color       : #e9ddff;
+    --text-color        : #E8F0F3;
+    --hover-color       : #FEC970;
+
+    --btn-bg-color      : #FBA35D;
+    --btn-shadow-color  : #F66146;
+
+    --primary-color     : #223752;
+    --secondary-color   : #ff5e58;
+    --tertiary-color    : #2d5a5a;
+    --quaternary-color  : #6dafac;
+
+    --secondary-shadow  : #c55a57;
 }
 
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: "Bree Serif", serif;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: var(--title-color);
+}
+
+.logo{
+    margin: 20px 0;
+}
+
+.site__logo{
+    height: 50px;
+}
+
+.title__logo{
+    margin: 0 5px;
+    font-size: 2rem;
+    color: var(--title-color);
 }

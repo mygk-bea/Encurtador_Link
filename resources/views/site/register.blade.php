@@ -8,11 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/forms.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/_pages/register.css') }}">
 </head>
 <body>
     <div class="container col-12 d-flex align-items-center">
-        <div class="forms col-6 rounded">
-            <h1 class="title">Encurta Link</h1>
+        <div class="forms ps-3 col-6">
+            <h1 class="title">Cadastre-se</h1>
             <div class="mb-3 col-10 field email">
                 <label for="basic-url" class="form-label">E-mail</label>
                 <input type="text" class="form-control" placeholder="endereco@dominio.com">
@@ -32,8 +33,9 @@
                 </button>
             </div>
         </div>
-        <div class="forms__logo col-6 align-content-center">
-            <img src="{{ asset('images/Logo.png') }}" class="col-12 logo" alt="logo">
+        <div class="forms__logo col-6 d-flex flex-column align-items-center justify-content-center">
+            <img src="{{ asset('images/Logo.png') }}" class="logo col-12" alt="logo">
+            <h1 class="title__logo">Encurta Link</h1>
         </div>
     </div>
 

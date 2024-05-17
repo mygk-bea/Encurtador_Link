@@ -1,0 +1,9 @@
+.site__logo{
+  height: 50px;
+}
+
+.title__logo{
+  margin: 0 5px;
+  font-size: 2rem;
+  color: var(--title-color);
+}

@@ -1,16 +1,3 @@
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-}
-
-.forms{
-    margin: 40px 0;
-}
-
-.forms__logo{
-    height: 100vh;
-}
 
 .forms__btn{
     border: 0;

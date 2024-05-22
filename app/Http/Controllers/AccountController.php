@@ -7,19 +7,30 @@ use Illuminate\Http\Request;
 class AccountController extends Controller
 {
     public function register() {
-        return View('site.register');
+        $menu = [
+            ['route'=>'site', 'page'=>'index', 'name'=>'Início'],
+            ['route'=>'site', 'page'=>'contact', 'name'=>'Contato'],
+            ['route'=>'site', 'page'=>'login',   'name'=>'Entrar']
+        ];
+        return View('site.register', compact('menu'));
     }
 
     public function recover() {
         $menu = [
-            ['page'=>'contact','traducao'=>'Fale Conosco'],
-            ['page'=>'login','traducao'=>'Entrar'],
+            ['route'=>'site', 'page'=>'index', 'name'=>'Início'],
+            ['route'=>'site', 'page'=>'contact', 'name'=>'Contato'],
+            ['route'=>'site', 'page'=>'login',   'name'=>'Entrar']
         ];
         return View('site.recover', compact('menu'));
     }
     
     public function login() {
-        return View('site.login');
+        $menu = [
+            ['route'=>'site', 'page'=>'index', 'name'=>'Início'],
+            ['route'=>'site', 'page'=>'contact', 'name'=>'Contato']
+        ];
+
+        return View('site.login', compact('menu'));
     }
 
     public function logout() {

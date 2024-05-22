@@ -16,11 +16,11 @@ class LinkController extends Controller
 
     public function list() {
         $menu = [
-            ['page'=>'register','traducao'=>'Cadastro'],
-            ['page'=>'contact','traducao'=>'Fale Conosco'],
-            ['page'=>'index','traducao'=>'Home'],
-            ['page'=>'recover','traducao'=>'Recuperar'],
-            ['page'=>'login','traducao'=>'Entrar'],
+            ['route'=>'site','page'=>'register','name'=>'Cadastro'],
+            ['route'=>'site','page'=>'contact', 'name'=>'Fale Conosco'],
+            ['route'=>'site','page'=>'index',   'name'=>'Home'],
+            ['route'=>'site','page'=>'recover', 'name'=>'Recuperar'],
+            ['route'=>'site','page'=>'login',   'name'=>'Entrar'],
         ];
 
         return View('site.list', compact('menu')); 

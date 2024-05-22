@@ -15,6 +15,12 @@ class IndexController extends Controller
     }
 
     public function contact() {
-        return View('site.contact');
+        $menu = [
+            ['route'=>'site', 'page'=>'index', 'name'=>'Início'],
+            ['route'=>'site','page'=>'login',   'name'=>'Entrar'],
+            ['route'=>'site', 'page'=>'register', 'name'=>'Cadastre-se']
+        ];
+
+        return View('site.contact', compact('menu'));
     }
 }

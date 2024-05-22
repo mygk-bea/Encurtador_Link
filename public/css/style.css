@@ -35,14 +35,15 @@ body{
     justify-content: center;
 }
 
-/* Tags */
+/* TAGS */
 a{
     text-decoration: none;
+    color: var(--hover-color);
 }
 
-
-/*  */
+/* BASIC */
 .title{
+    width: 100%;
     margin-bottom: 40px;
     font-size: 3rem;
     color: var(--hover-color);
@@ -57,7 +58,7 @@ a{
     height: 50px;
 }
 
-.title__logo{
+.site__title{
     margin: 0 5px;
     font-size: 2rem;
     color: var(--title-color);

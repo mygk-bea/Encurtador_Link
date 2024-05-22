@@ -4,10 +4,11 @@
 
 @section('styles')
     <link rel="stylesheet" href="{{ asset('css/forms.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/_pages/register.css') }}">
 @endsection
 
 @section('conteudo')
+    @component('site.layouts._components.menu', ['nav' => $menu])
+    @endcomponent
     <div class="container col-12 d-flex align-items-center">
         @component('site.layouts._components.form_register')
         @endcomponent

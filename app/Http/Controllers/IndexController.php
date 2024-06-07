@@ -7,7 +7,14 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function index() {
-        return View('site.index');
+        $menu = [
+            ['route'=>'site', 'page'=>'index', 'name'=>'Início'],
+            ['route'=>'site', 'page'=>'contact', 'name'=>'Fale Conosco'],
+            ['route'=>'site', 'page'=>'login',   'name'=>'Entrar'],
+            ['route'=>'site', 'page'=>'register', 'name'=>'Cadastre-se']
+        ];
+
+        return View('site.index', compact('menu'));
     }
 
     public function redirect() {
@@ -17,7 +24,7 @@ class IndexController extends Controller
     public function contact() {
         $menu = [
             ['route'=>'site', 'page'=>'index', 'name'=>'Início'],
-            ['route'=>'site','page'=>'login',   'name'=>'Entrar'],
+            ['route'=>'site', 'page'=>'login',   'name'=>'Entrar'],
             ['route'=>'site', 'page'=>'register', 'name'=>'Cadastre-se']
         ];
 

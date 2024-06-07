@@ -10,7 +10,7 @@
 @section('conteudo')
     @component('site.layouts._components.menu', ['nav' => $menu])
     @endcomponent
-    <div class="container col-8 d-flex flex-wrap justify-content-center">
+    <div class="container col-10 d-flex flex-wrap justify-content-center">
         @component('site.layouts._components.form_contact')
         @endcomponent
         <div class="forms__logo col-6 d-flex flex-column align-items-center justify-content-center">

@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('link', function (Blueprint $table) {
             $table->id();
+            $table->string('path', 255);
+            $table->string('url', 255);
+            $table->dateTime('tempo_limite');
+
+            // user_hash
             $table->timestamps();
         });
     }

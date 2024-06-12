@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('recuperar', function (Blueprint $table) {
             $table->id();
+            $table->string('email', 150);
+            $table->string('codigo', 150);
+            $table->dateTime('tempo_limite');
+
+            // user_hash
             $table->timestamps();
         });
     }

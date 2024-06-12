@@ -16,9 +16,11 @@ return new class extends Migration
             $table->string('email', 150);
             $table->string('codigo', 150);
             $table->dateTime('tempo_limite');
-
-            // user_hash
+            $table->string('user_hash', 255);
             $table->timestamps();
+
+            $table->foreign('user_hash')->references('hash')->on('usuario');
+            $table->unique('user_hash');
         });
     }
 

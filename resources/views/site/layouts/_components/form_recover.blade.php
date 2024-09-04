@@ -1,4 +1,5 @@
 <form action="" method="" class="forms col-12 d-flex flex-column align-items-end justify-content-center">
+  @csrf
   <div class="mb-3 col-12 input-group-lg email">
     <h5 for="basic-url" class="form-label">Informe seu e-mail</h5>
     <input type="text" class="form-control" placeholder="endereco@dominio.com">

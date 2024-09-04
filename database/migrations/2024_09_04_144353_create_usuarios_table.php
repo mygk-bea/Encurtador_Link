@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contato', function (Blueprint $table) {
-            $table->id();
+        Schema::create('usuarios', function (Blueprint $table) {
+            $table->unsignedBigInteger('id');
+            $table->string('hash', 191);
             $table->string('email', 150);
-            $table->string('nome', 50);
-            $table->text('mensagem');
-            $table->integer('motivo');
+            $table->string('senha', 255);
+            $table->primary(['id', 'hash']);
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('contato');
+        Schema::dropIfExists('usuarios');
     }
 };

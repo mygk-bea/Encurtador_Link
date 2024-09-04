@@ -1,4 +1,5 @@
 <form action="" method="" class="forms ps-3 col-6">
+  @csrf
   <h1 class="title">Cadastre-se</h1>
   <div class="mb-3 col-10 field email">
     <label for="basic-url" class="form-label">E-mail</label>

@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('link', function (Blueprint $table) {
+        Schema::create('recuperars', function (Blueprint $table) {
             $table->id();
-            $table->string('path', 255);
-            $table->string('url', 255);
+            $table->string('email', 150);
+            $table->string('codigo', 150);
             $table->dateTime('tempo_limite');
-            $table->string('user_hash', 255);
+            $table->string('user_hash', 191);
             $table->timestamps();
 
             $table->foreign('user_hash')->references('hash')->on('usuario');
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('link');
+        Schema::dropIfExists('recuperars');
     }
 };

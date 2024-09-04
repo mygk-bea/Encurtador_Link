@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// ROTA::VERBO HTTP ('CAMINHO', [NAMESPACE::class, 'CLASSE DO CONTROLLER'])->('APELIDO);
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('site.index');
 Route::get('/redirect', [App\Http\Controllers\IndexController::class, 'redirect'])->name('site.redirect');
 Route::get('/contact', [App\Http\Controllers\IndexController::class, 'contact'])->name('site.contact');
